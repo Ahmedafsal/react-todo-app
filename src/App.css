@@ -17,12 +17,14 @@
   justify-content: space-evenly;
   flex-direction: column;
   background:rgba(255, 255, 255, .2);
+  flex-wrap: wrap;
+}
+
+.input-window {
   border: 2px solid rgba(255, 255, 255, .2);
   border-radius: 6px;
-  padding: 3em 3em 3em 3em;
+  padding: 30px;
   margin: 5vh 2vw 0 2vw;
-  flex-wrap: column wrap;
-  height: 20vh;
 }
 
 .input-window h3{
@@ -38,7 +40,7 @@
 }
 
 .input-window input {
-  width: 75%;
+  width: 70%;
   border: none;
   outline: none;
   font-size: 1em;
@@ -59,6 +61,22 @@
 
 .input-window button:hover {
   cursor: pointer;
+}
+
+.output-window {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.output-card {
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 6px;
+  padding: 5px;
+  margin: 5vh 2vw 0 2vw;
 }
 
 
