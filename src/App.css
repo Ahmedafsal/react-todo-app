@@ -1,82 +1,145 @@
-.App{
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(to bottom right, #ee0979 , #ff6a00);
+.app {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom right, #ff5f6d, #ffc371);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0;
+  justify-content: center;
+  max-width: 100%;
 }
 
-.card { 
+.add-item {
+  margin: 0;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
-  background:rgba(255, 255, 255, .2);
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 30vw;
 }
 
-.input-window {
-  border: 2px solid rgba(255, 255, 255, .2);
-  border-radius: 6px;
-  padding: 30px;
-  margin: 5vh 2vw 0 2vw;
-}
-
-.input-window h3{
-  margin : 0;
+.app-header {
   font-size: 2em;
-  text-align: center;
+  font-weight: 700;
+  color: royalblue;
 }
 
-.input-window p {
-  color: rgba(0, 0, 0, .7);
-  font-size: 1.2rem;
+.add-item p {
   font-weight: 800;
 }
 
-.input-window input {
-  width: 70%;
-  border: none;
-  outline: none;
-  font-size: 1em;
-  border-radius: 3px 0 0 3px;
-  padding: .5em;
-  color: rgba(0, 0, 0, .7)
-}
-
-.input-window button {
-  border: none;
-  outline: none;
-  font-size: 1em;
-  font-weight: 700;
-  padding: .5em;
-  width: 20%;
-  border-radius: 0 3px 3px 0;
-}
-
-.input-window button:hover {
-  cursor: pointer;
-}
-
-.output-window {
-  margin-top: 5vh;
+.input-form {
   display: flex;
   flex-direction: row;
+}
+
+.input-form .input-todo {
+  outline: transparent;
+  border: none;
+  width: 20em;
+  border-radius: .4em  0 0 .4em;
+  font-weight: 600;
+  padding-left: 1em;
+}
+
+.input-form button {
+  outline: transparent;
+  border: none;
+  width: 5em;
+  height: 2.9em;
+  border-radius: 0 .4em .4em 0;
+
+}
+
+.input-form button:hover {
+  cursor: pointer
+
+}
+
+.view-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
-.output-card {
-  border: 2px solid rgba(255, 255, 255, .2);
-  border-radius: 6px;
-  padding: 5px;
-  margin: 5vh 2vw 0 2vw;
+.view-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 2vh;
+  width: 30vw;
 }
+
+.view-section-header {
+  border-bottom: 1px dashed rgba(255, 255, 255, .4);
+  color: white
+}
+
+.view-section-header span:hover {
+  cursor: pointer;
+}
+
+.view-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .3);
+  margin-bottom: 2vh;
+  width: 20vw;
+  padding: 1em;
+  border-radius: 5px;
+  
+}
+
+.view-card input {
+  margin-right: 1em;
+}
+
+.view-card p {
+  font-size: 1.3em;
+  margin-right: 1em;
+  color: royalblue;
+}
+
+.view-card .time {
+  font-size: .8em;
+  color: white;
+}
+
+.rmv-btn {
+  font-weight: 800;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.rmv-btn:hover {
+  cursor: pointer;
+}
+
+.view-card .complete {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.completed-todo {
+  color: black
+}
+
+.view-card-deleted {
+  background: rgba(0, 0, 0, .4);
+}
+
 
 
