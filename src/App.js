@@ -67,7 +67,7 @@ function App() {
             <input ref={todoTextRef} type="text" placeholder="&#9997;" className="input-todo"/>
             <button className="btn-add"
                   onClick={ handleButtonClick }
-            >Add</button>
+            >&#10133;</button>
           </div>
           <button className="fresh-btn"onClick={handleFreshPageClick}>
             Need a fresh List &#128214;

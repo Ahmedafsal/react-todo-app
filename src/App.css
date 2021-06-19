@@ -3,6 +3,11 @@
   min-height: 100vh;
   width: 100vw;
   background-image: linear-gradient(to bottom right, #ff5f6d, #ffc371);
+
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -18,7 +23,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  align-items: center;
   max-width: 50vw;
 }
 
@@ -47,7 +52,7 @@
   outline: transparent;
   border: none;
   width: 23em;
-  border-radius: .4em  0 0 .4em;
+  border-radius: 1em  0 0 1em;
   font-weight: 400;
   padding-left: 1em;
   color: rgba(0, 0, 0, .7)
@@ -58,13 +63,13 @@
   border: none;
   width: 5em;
   height: 2.9em;
-  border-radius: 0 .4em .4em 0;
+  border-radius: 0 1em 1em 0;
 
 }
 
 .input-form button:hover {
-  cursor: pointer
-
+  cursor: pointer;
+  background: rgba(255, 255, 255, .7);
 }
 
 .fresh-btn {
@@ -130,7 +135,7 @@
   width: 20vw;
   min-height: 15vh;
   padding: 1em;
-  border-radius: 5px;
+  border-radius: 1em;
   
 }
 
