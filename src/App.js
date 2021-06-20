@@ -10,7 +10,7 @@ function App() {
 
   const [deletedTodos, setDeletedTodos] = useState([])
   const today = new Date();
-  const displayDate = ((today.getDay() < 10)?"0":"") + today.getDay() + "/" + 
+  const displayDate = ((today.getDate() < 10)?"0":"") + today.getDate() + "/" + 
                       ((today.getMonth() < 10)?"0":"") + today.getMonth() + "/" +
                       ((today.getFullYear() < 10)?"0":"") + today.getFullYear()
 
